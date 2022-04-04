@@ -1,0 +1,23 @@
+.testimonials{
+    margin-bottom: 67px;
+    .testimonials-slider{
+        position: relative;
+        @media(min-width: 768px){
+            border: 1px solid $primary;
+            padding: 54px 0;
+        }
+        .testimonials-slide-picture{
+            margin-bottom: 0;
+        }
+        .testimonials-slider-content{
+            padding-top: 20px;
+            h2{
+                font-size: 30px;
+                margin-bottom: 35px;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

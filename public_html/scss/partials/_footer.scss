@@ -1,0 +1,18 @@
+footer{
+    padding: 46px 0 25px;
+    .social{
+        margin-bottom: 19px;
+        a{
+            display: inline-block;
+            margin-inline: 16px;
+            font-size: 21px;
+            color: darken($primary, 15%);
+        }
+    }
+    .copyright{
+        font-size: 12px;
+        letter-spacing: -0.17px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}
