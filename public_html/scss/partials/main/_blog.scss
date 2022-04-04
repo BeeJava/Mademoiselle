@@ -1,0 +1,19 @@
+.blog{
+    margin-bottom: 17px;
+    .col-12{
+        margin-bottom: 38px;
+    }
+    .blog-pagination{
+        .pagination{
+            justify-content: center;
+            align-items: center;
+            .page-link{
+                font-family: $bodoni;
+                border: none;
+                color: #1e1e1e;
+                font-weight: 700;
+            }
+        }
+    }
+}
+

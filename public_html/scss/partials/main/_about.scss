@@ -24,6 +24,7 @@
     }
     .about-search-news{
         .search-form{
+            margin-bottom: 40px;
             input{
                 border: 1px solid #1e1e1e;
                 background-position: 95% center;
@@ -34,7 +35,9 @@
                     font-style: italic;
                 }
             }
-            
+        }
+        .latest-trends-item{
+            margin-bottom: 20px;
         }
     }
 }

@@ -12471,6 +12471,11 @@ header .navbar .navbar-nav .nav-link span {
   margin-bottom: 90px;
 }
 
+.blog-intro {
+  padding: 283px 0 263px;
+  margin-bottom: 86px;
+}
+
 .latest-trends .section-title {
   margin-bottom: 42px;
 }
@@ -12638,6 +12643,10 @@ header .navbar .navbar-nav .nav-link span {
   width: 100%;
 }
 
+.about .about-search-news .search-form {
+  margin-bottom: 40px;
+}
+
 .about .about-search-news .search-form input {
   border: 1px solid #1e1e1e;
   background-position: 95% center;
@@ -12648,6 +12657,30 @@ header .navbar .navbar-nav .nav-link span {
 
 .about .about-search-news .search-form input::placeholder {
   font-style: italic;
+}
+
+.about .about-search-news .latest-trends-item {
+  margin-bottom: 20px;
+}
+
+.blog {
+  margin-bottom: 17px;
+}
+
+.blog .col-12 {
+  margin-bottom: 38px;
+}
+
+.blog .blog-pagination .pagination {
+  justify-content: center;
+  align-items: center;
+}
+
+.blog .blog-pagination .pagination .page-link {
+  font-family: "Bodoni", sans-serif;
+  border: none;
+  color: #1e1e1e;
+  font-weight: 700;
 }
 
 footer {
