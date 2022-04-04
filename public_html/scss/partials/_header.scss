@@ -69,10 +69,11 @@ header{
                 color: #1e1e1e;
                 position: relative;
                 white-space: nowrap;
+                transition: 0.3s ease-in;
                 border-bottom: 1px solid transparent;
-                &:active, &:hover{
+                &.active, &:hover{
                     border-bottom: 1px solid #ECD9D9;
-                    background-color: #ECD9D9;
+                    background-color: darken(#ECD9D9, 20%);
                     @media(min-width: 992px){
                         background-color: transparent;
                     }

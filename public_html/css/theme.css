@@ -11956,10 +11956,16 @@ body {
 h1, .h1 {
   font-family: "Bodoni", sans-serif;
   color: #fff;
-  font-size: 36px;
+  font-size: 40px;
   text-align: center;
   letter-spacing: 2px;
   line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 50px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -12020,6 +12026,10 @@ a {
 
 .rotate-neg45 {
   transform: rotateZ(-45deg);
+}
+
+.slide-in {
+  left: 25% !important;
 }
 
 /**
@@ -12423,16 +12433,17 @@ header .navbar .navbar-nav .nav-link {
   color: #1e1e1e;
   position: relative;
   white-space: nowrap;
+  transition: 0.3s ease-in;
   border-bottom: 1px solid transparent;
 }
 
-header .navbar .navbar-nav .nav-link:active, header .navbar .navbar-nav .nav-link:hover {
+header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-link:hover {
   border-bottom: 1px solid #ECD9D9;
-  background-color: #ECD9D9;
+  background-color: #ca9595;
 }
 
 @media (min-width: 992px) {
-  header .navbar .navbar-nav .nav-link:active, header .navbar .navbar-nav .nav-link:hover {
+  header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-link:hover {
     background-color: transparent;
   }
 }
@@ -12453,6 +12464,11 @@ header .navbar .navbar-nav .nav-link span {
   padding: 218px 0 269px;
   text-align: center;
   margin-bottom: 75px;
+}
+
+.about-intro {
+  padding: 283px 0;
+  margin-bottom: 90px;
 }
 
 .latest-trends .section-title {
@@ -12591,6 +12607,47 @@ header .navbar .navbar-nav .nav-link span {
 
 .testimonials .testimonials-slider .testimonials-slider-content p {
   margin-bottom: 0;
+}
+
+.about .about-data h2, .about .about-data .h2 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .about .about-data h2, .about .about-data .h2 {
+    font-size: 44px;
+  }
+}
+
+.about .about-data p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.about .about-data p:first-of-type {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 29px;
+}
+
+.about .about-data figure {
+  margin-bottom: 66px;
+}
+
+.about .about-data figure img {
+  width: 100%;
+}
+
+.about .about-search-news .search-form input {
+  border: 1px solid #1e1e1e;
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-size: 17px auto;
+  padding: 20px;
+}
+
+.about .about-search-news .search-form input::placeholder {
+  font-style: italic;
 }
 
 footer {

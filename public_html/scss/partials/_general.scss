@@ -9,10 +9,13 @@ body{
 h1{
     font-family: $bodoni;
     color: #fff;
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
     letter-spacing: 2px;
     line-height: 1.2;
+    @media(min-width: 768px){
+        font-size: 50px;
+    }
     @media(min-width: 992px){
         max-width: 704px;
         margin-inline: auto;
@@ -60,4 +63,7 @@ a{
 }
 .rotate-neg45{
     transform: rotateZ(-45deg);
+}
+.slide-in{
+    left: 25% !important;
 }

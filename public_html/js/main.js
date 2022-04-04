@@ -18,27 +18,27 @@ $(document).ready(function () {
         let headerHeight = $('header').outerHeight();
         $('main').css('marginTop', headerHeight);
     }
-    /*function setMarginViaScroll() {
+    function setMarginViaScroll() {
         let headerHeight = $('header').outerHeight();
         if (($(window).scrollTop()) > headerHeight) {
-            $('header').addClass('py-lg-5');
-            headerHeight = $('header').outerHeight();
-            $('main').css('marginTop', headerHeight);
-        } else {
             $('header').removeClass('py-lg-5');
             headerHeight = $('header').outerHeight();
             $('main').css('marginTop', headerHeight);
+        } else {
+            $('header').addClass('py-lg-5');
+            headerHeight = $('header').outerHeight();
+            $('main').css('marginTop', headerHeight);
         }
-    }*/
-    //setMarginViaScroll();
+    }
+    setMarginViaScroll();
     setMarginTop();
     $(window).resize(function () {
         setMarginTop();
     }).scroll(function () {
-        //setMarginViaScroll();
+        setMarginViaScroll();
         animation();
     });
-    if($('.testimonials-slider').length > 0){
+    if ($('.testimonials-slider').length > 0) {
         $('.testimonials-slider').owlCarousel({
             items: 1,
             autoplay: true,
@@ -46,6 +46,20 @@ $(document).ready(function () {
         });
     }
 
+    function highlightLink() {
+        let mainId = $('main').attr('id');
+        console.log(mainId);
+        $('header .nav-link').each(function(){
+            if($(this).attr('href').includes(mainId)){
+                $(this).addClass('active');
+            }else{
+                $(this).removeClass('active');
+            }
+        });
+    }
+    highlightLink();
+    
+    
 // animation start
     function animation() {
         var windowHight = $(window).height();

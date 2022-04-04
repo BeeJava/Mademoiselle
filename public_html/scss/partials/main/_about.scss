@@ -1,0 +1,40 @@
+.about{
+    .about-data{
+        h2{
+            margin-bottom: 20px;
+            @media(min-width: 992px){
+                font-size: 44px;
+            }
+        }
+        p{
+            font-size: 18px;
+            line-height: 26px;
+            &:first-of-type{
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 29px;
+            }
+        }
+        figure{
+            margin-bottom: 66px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .about-search-news{
+        .search-form{
+            input{
+                border: 1px solid #1e1e1e;
+                background-position: 95% center;
+                background-repeat: no-repeat;
+                background-size: 17px auto;
+                padding: 20px;
+                &::placeholder{
+                    font-style: italic;
+                }
+            }
+            
+        }
+    }
+}
