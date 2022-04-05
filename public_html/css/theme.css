@@ -12466,7 +12466,8 @@ header .navbar .navbar-nav .nav-link span {
   margin-bottom: 75px;
 }
 
-.about-intro {
+.about-intro,
+.services-intro {
   padding: 283px 0;
   margin-bottom: 90px;
 }
