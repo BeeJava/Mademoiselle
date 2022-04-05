@@ -15,3 +15,23 @@
     padding: 283px 0 263px;
     margin-bottom: 86px;
 }
+.error-intro{
+    padding: 277px 0;
+    h1{
+        margin-bottom: 32px;
+        .error{
+            display: block;
+        }
+    }
+
+    .homeback-link{
+        display: inline-block;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.5px;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 14px 30px;
+        border: 1px solid #fff;
+    }
+}
