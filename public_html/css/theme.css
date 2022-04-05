@@ -12480,11 +12480,16 @@ header .navbar .navbar-nav .nav-link span {
   margin-bottom: 42px;
 }
 
-.latest-trends .latest-trends-item-picture:before {
+.latest-trends .latest-trends-item {
+  max-width: 350px;
+  margin-inline: auto;
+}
+
+.latest-trends .latest-trends-item .latest-trends-item-picture:before {
   background-color: #ECD9D9;
 }
 
-.latest-trends .latest-trends-item-title {
+.latest-trends .latest-trends-item .latest-trends-item-title {
   max-width: 85%;
   margin-inline: auto;
   background-color: #fff;
@@ -12495,7 +12500,7 @@ header .navbar .navbar-nav .nav-link span {
   z-index: 5;
 }
 
-.latest-trends .latest-trends-item-title p {
+.latest-trends .latest-trends-item .latest-trends-item-title p {
   margin-bottom: 17px;
   font-size: 14px;
   line-height: 17px;
@@ -12504,13 +12509,13 @@ header .navbar .navbar-nav .nav-link span {
   font-style: italic;
 }
 
-.latest-trends .latest-trends-item-title h6, .latest-trends .latest-trends-item-title .h6 {
+.latest-trends .latest-trends-item .latest-trends-item-title h6, .latest-trends .latest-trends-item .latest-trends-item-title .h6 {
   max-width: 90%;
   margin-inline: auto;
   margin-bottom: 0;
 }
 
-.latest-trends .latest-trends-item-title h6 a, .latest-trends .latest-trends-item-title .h6 a {
+.latest-trends .latest-trends-item .latest-trends-item-title h6 a, .latest-trends .latest-trends-item .latest-trends-item-title .h6 a {
   line-height: 24px;
   color: #1e1e1e;
   display: -webkit-box;
@@ -12681,6 +12686,109 @@ header .navbar .navbar-nav .nav-link span {
   border: none;
   color: #1e1e1e;
   font-weight: 700;
+}
+
+.single-blog {
+  padding: 80px 0 130px;
+}
+
+@media (min-width: 992px) {
+  .single-blog {
+    padding: 165px 0 273px;
+  }
+}
+
+.single-blog .category {
+  font-family: "Bodoni", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.single-blog .category a {
+  color: #1e1e1e;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.single-blog .category i {
+  margin-left: 14px;
+}
+
+.single-blog .row {
+  margin-bottom: 97px;
+}
+
+.single-blog .row .single-blog-description .single-blog-description-title {
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 34px;
+  color: #1e1e1e;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+@media (min-width: 992px) {
+  .single-blog .row .single-blog-description .single-blog-description-title {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+.single-blog .row .single-blog-description .single-blog-description-text {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .single-blog .single-blog-content {
+    max-width: 748px;
+    margin-inline: auto;
+  }
+}
+
+.single-blog .single-blog-content p {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: justify;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .single-blog .single-blog-content p {
+    padding-inline: 0;
+  }
+}
+
+.single-blog .single-blog-content figure {
+  margin-bottom: 20px;
+}
+
+.single-blog .tags {
+  font-family: "Bodoni", sans-serif;
+  line-height: 27px;
+}
+
+.single-blog .tags p {
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.single-blog .tags div {
+  display: flex;
+}
+
+.single-blog .tags div a {
+  display: inline-block;
+  color: #1e1e1e;
+  margin-inline: 18px;
 }
 
 footer {
