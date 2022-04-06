@@ -22,10 +22,12 @@ $(document).ready(function () {
         let headerHeight = $('header').outerHeight();
         if (($(window).scrollTop()) > headerHeight) {
             $('header').removeClass('py-lg-5');
+            $('header').addClass('py-2');
             headerHeight = $('header').outerHeight();
             $('main').css('marginTop', headerHeight);
         } else {
             $('header').addClass('py-lg-5');
+            $('header').removeClass('py-2');
             headerHeight = $('header').outerHeight();
             $('main').css('marginTop', headerHeight);
         }
@@ -59,7 +61,17 @@ $(document).ready(function () {
     }
     highlightLink();
     
-    
+    /*function setHeight(){
+        let elementHeight = Math.max.apply(null, $('.services .services-item').map(function(){
+            return $(this).outerHeight();
+        }).get());
+        $('.services-item').each(function(){
+            $(this).outerHeight(elementHeight);
+        });
+    }
+    if ($('.services .services-item').length > 0){
+        setHeight();
+    }*/
 // animation start
     function animation() {
         var windowHight = $(window).height();

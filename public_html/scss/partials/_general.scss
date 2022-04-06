@@ -64,6 +64,6 @@ a{
 .rotate-neg45{
     transform: rotateZ(-45deg);
 }
-.slide-in{
-    left: 25% !important;
+figure:before{
+    background-color: $primary;
 }

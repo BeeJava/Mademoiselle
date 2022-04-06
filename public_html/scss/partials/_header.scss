@@ -1,5 +1,6 @@
 header{
     background-color: #fff;
+    padding: 15px 0;
     .navbar{
         .navbar-brand{
             img{
@@ -72,7 +73,7 @@ header{
                 transition: 0.3s ease-in;
                 border-bottom: 1px solid transparent;
                 &.active, &:hover{
-                    border-bottom: 1px solid #ECD9D9;
+                    border-bottom: 1px solid darken(#ECD9D9, 10%);
                     background-color: darken(#ECD9D9, 20%);
                     @media(min-width: 992px){
                         background-color: transparent;

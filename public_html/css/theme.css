@@ -12028,8 +12028,8 @@ a {
   transform: rotateZ(-45deg);
 }
 
-.slide-in {
-  left: 25% !important;
+figure:before {
+  background-color: #ECD9D9;
 }
 
 /**
@@ -12353,6 +12353,7 @@ a {
 
 header {
   background-color: #fff;
+  padding: 15px 0;
 }
 
 header .navbar .navbar-brand img {
@@ -12438,7 +12439,7 @@ header .navbar .navbar-nav .nav-link {
 }
 
 header .navbar .navbar-nav .nav-link.active, header .navbar .navbar-nav .nav-link:hover {
-  border-bottom: 1px solid #ECD9D9;
+  border-bottom: 1px solid #dbb7b7;
   background-color: #ca9595;
 }
 
@@ -12498,6 +12499,14 @@ header .navbar .navbar-nav .nav-link span {
   text-transform: uppercase;
   padding: 14px 30px;
   border: 1px solid #fff;
+  transition: 0.4s linear;
+}
+
+.error-intro .homeback-link:hover {
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.8;
+  color: #ca9595;
 }
 
 .latest-trends .section-title {
@@ -12576,16 +12585,25 @@ header .navbar .navbar-nav .nav-link span {
 }
 
 .services .services-item .services-item-content {
-  padding: 72px 32px 31px;
+  padding-inline: 32px;
 }
 
 @media (min-width: 992px) {
   .services .services-item .services-item-content {
-    padding: 143px 64px 93px;
+    padding-inline: 64px;
   }
 }
 
-.services .services-item .services-item-content h2, .services .services-item .services-item-content .h2 {
+@media (min-width: 768px) {
+  .services .services-item .services-item-content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.services .services-item .services-item-content div h2, .services .services-item .services-item-content div .h2 {
   font-size: 2rem;
   line-height: 3.4rem;
   margin-bottom: 36px;
@@ -12594,15 +12612,16 @@ header .navbar .navbar-nav .nav-link span {
 }
 
 @media (min-width: 992px) {
-  .services .services-item .services-item-content h2, .services .services-item .services-item-content .h2 {
+  .services .services-item .services-item-content div h2, .services .services-item .services-item-content div .h2 {
     font-size: 3.6rem;
     line-height: 4.4rem;
   }
 }
 
-.services .services-item .services-item-content .service-link {
+.services .services-item .services-item-content div .service-link {
   display: inline-block;
   padding: 14px 36px;
+  margin-right: auto;
   font-size: 1.4rem;
   line-height: 1.7rem;
   letter-spacing: 0.5px;
@@ -12935,6 +12954,10 @@ header .navbar .navbar-nav .nav-link span {
 
 .contact-info p:not(:last-of-type) {
   margin-bottom: 15px;
+}
+
+.contact-info p a {
+  color: inherit;
 }
 
 footer {
