@@ -4,15 +4,15 @@
         h2{
             margin-bottom: 20px;
             @media(min-width: 992px){
-                font-size: 44px;
+                font-size: 4.4rem;
             }
         }
         p{
-            font-size: 18px;
-            line-height: 26px;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
             &:first-of-type{
-                font-size: 20px;
-                line-height: 28px;
+                font-size: 2rem;
+                line-height: 2.8rem;
                 margin-bottom: 29px;
             }
         }

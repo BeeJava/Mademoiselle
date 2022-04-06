@@ -9,18 +9,18 @@ body{
 h1{
     font-family: $bodoni;
     color: #fff;
-    font-size: 40px;
+    font-size: 4rem;
     text-align: center;
     letter-spacing: 2px;
     line-height: 1.2;
     @media(min-width: 768px){
-        font-size: 50px;
+        font-size: 5rem;
     }
     @media(min-width: 992px){
         max-width: 704px;
         margin-inline: auto;
-        font-size: 60px;
-        line-height: 74px;
+        font-size: 6rem;
+        line-height: 7.4rem;
         letter-spacing: 20px;
     }
 }
@@ -33,13 +33,13 @@ h2, h3, h4, h5, h6{
     font-family: $bodoni;
     position: relative;
     padding-bottom: 20px;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
     letter-spacing: 5px;
     text-transform: uppercase;
     @media(min-width: 768px){
-        font-size: 30px;
-        line-height: 45px;
+        font-size: 3rem;
+        line-height: 4.5rem;
     }
 }
 .section-title:after{

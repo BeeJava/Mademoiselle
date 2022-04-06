@@ -5,14 +5,14 @@ footer{
         a{
             display: inline-block;
             margin-inline: 16px;
-            font-size: 21px;
+            font-size: 2.1rem;
             color: darken($primary, 15%);
         }
     }
     .copyright{
-        font-size: 12px;
+        font-size: 1.2rem;
         letter-spacing: -0.17px;
-        line-height: 20px;
+        line-height: 2rem;
         font-weight: 400;
     }
 }

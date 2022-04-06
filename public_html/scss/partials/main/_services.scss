@@ -23,8 +23,8 @@
                 padding: 143px 64px 93px;
             }
             h2{
-                font-size: 20px;
-                line-height: 34px;
+                font-size: 2rem;
+                line-height: 3.4rem;
                 margin-bottom: 36px;
                 width: 100%;
                 margin-inline: auto;
@@ -33,15 +33,15 @@
                     
                 }
                 @media(min-width: 992px){
-                    font-size: 36px;
-                    line-height: 44px;
+                    font-size: 3.6rem;
+                    line-height: 4.4rem;
                 }
             }
             .service-link{
                 display: inline-block;
                 padding: 14px 36px;
-                font-size: 14px;
-                line-height: 17px;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
                 color: #1e1e1e;
