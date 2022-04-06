@@ -105,6 +105,9 @@ $(document).ready(function () {
                         required: true,
                         email: true
                     },
+                    subject: {
+                        required: true
+                    },
                     message: {
                         required: true,
                         maxlength: 255
@@ -119,6 +122,9 @@ $(document).ready(function () {
                         required: 'Email* is required field!!!',
                         email: 'Please insert valid Email address!!!'
                     },
+                    subject: {
+                        required: "Subject* is required field!!!"
+                    },
                     message: {
                         required: 'Message* is required field!!!',
                         maxlength: 'Max Message length is 255 characters !!!'
@@ -128,7 +134,7 @@ $(document).ready(function () {
                 },
                 errorElement: 'p',
                 errorPlacement: function (error, element) {
-                    error.appendTo($(element).closest('.form-group').find('.error-msg'));
+                    error.appendTo($(element).closest('.form-group').find('.error-message'));
                 }
 
             });

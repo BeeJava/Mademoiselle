@@ -12854,6 +12854,89 @@ header .navbar .navbar-nav .nav-link span {
   margin-bottom: 0;
 }
 
+.contact {
+  padding: 50px 0 55px;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    padding: 100px 0 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact .map-location {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .contact .map-location {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact .contact-item {
+    max-width: 50%;
+    margin-right: auto;
+  }
+}
+
+.contact .contact-item h1, .contact .contact-item .h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  letter-spacing: 5px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .contact .contact-item h1, .contact .contact-item .h1 {
+    text-align: left;
+  }
+}
+
+.contact .contact-item .contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .contact-item .contact-form .form-group .error-message {
+  color: red;
+  font-style: italic;
+}
+
+.contact .contact-item .contact-form .form-group .form-control {
+  border: none;
+}
+
+.contact .contact-item .contact-form .form-group button {
+  padding: 14px 30.5px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.5px;
+}
+
+.contact-info {
+  padding: 60px 0;
+  margin-bottom: 46px;
+  background-color: #dbb7b7;
+}
+
+.contact-info p {
+  font-size: 2.4rem;
+}
+
+.contact-info p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
 footer {
   padding: 46px 0 25px;
 }

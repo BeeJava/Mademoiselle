@@ -1,0 +1,13 @@
+.contact-info{
+    padding: 60px 0;
+    margin-bottom: 46px;
+    background-color: darken($primary, 10%);
+    p{
+        font-size: 2.4rem;
+        &:not(:last-of-type){
+            margin-bottom: 15px;
+        }
+        
+    }
+}
+
