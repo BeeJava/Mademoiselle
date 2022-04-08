@@ -9,6 +9,13 @@
         }
         a{
             color: inherit;
+            transition: 0.3s linear;
+            &:hover{
+                padding-left: 20px;
+                font-size: 2.6rem;
+                font-style: italic;
+                color: darken(#fff, 10%);
+            }
         }
     }
 }

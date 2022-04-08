@@ -50,7 +50,6 @@ $(document).ready(function () {
 
     function highlightLink() {
         let mainId = $('main').attr('id');
-        console.log(mainId);
         $('header .nav-link').each(function(){
             if($(this).attr('href').includes(mainId)){
                 $(this).addClass('active');
@@ -61,17 +60,22 @@ $(document).ready(function () {
     }
     highlightLink();
     
-    /*function setHeight(){
-        let elementHeight = Math.max.apply(null, $('.services .services-item').map(function(){
+    function setHeight(){
+        let elementHeight = Math.max.apply(null, $('.services .services-item-content').map(function(){
             return $(this).outerHeight();
         }).get());
-        $('.services-item').each(function(){
+        $('.services-item-content').each(function(){
             $(this).outerHeight(elementHeight);
         });
     }
     if ($('.services .services-item').length > 0){
         setHeight();
-    }*/
+    }
+    
+    $('.about').on('click', '.toggle-sidebar', function(){
+        $(this).toggleClass('fa-chevron-left fa-chevron-right').toggleClass('toggler-position');
+        $('.about-sidebar-news').toggleClass('slide-in');
+    });
 // animation start
     function animation() {
         var windowHight = $(window).height();
