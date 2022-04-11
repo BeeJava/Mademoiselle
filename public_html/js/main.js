@@ -38,53 +38,70 @@ $(document).ready(function () {
         setMarginTop();
     }).scroll(function () {
         setMarginViaScroll();
-        animation();
     });
+
+
     if ($('.testimonials-slider').length > 0) {
         $('.testimonials-slider').owlCarousel({
             items: 1,
             autoplay: true,
-            autoplayHoverPause: true
+            autoplayHoverPause: true,
+            loop: true
         });
     }
 
     function highlightLink() {
         let mainId = $('main').attr('id');
-        $('header .nav-link').each(function(){
-            if($(this).attr('href').includes(mainId)){
+        $('header .nav-link').each(function () {
+            if ($(this).attr('href').includes(mainId)) {
                 $(this).addClass('active');
-            }else{
+            } else {
                 $(this).removeClass('active');
             }
         });
     }
     highlightLink();
+
     
-    function setHeight(){
-        let elementHeight = Math.max.apply(null, $('.services .services-item-content').map(function(){
+
+    function setHeight() {
+        let elementHeight = Math.max.apply(null, $('.services .services-item-content').map(function () {
             return $(this).outerHeight();
         }).get());
-        $('.services-item-content').each(function(){
+        $('.services-item-content').each(function () {
             $(this).outerHeight(elementHeight);
         });
+        
+        
     }
-    if ($('.services .services-item').length > 0){
+
+    if ($(window).width() > 768){
         setHeight();
     }
+
     
-    $('.about').on('click', '.toggle-sidebar', function(){
+    $(window).resize(function () {
+        if ($(window).width() > 768){
+            setHeight();
+        }
+        
+    });
+
+
+
+    $('.about').on('click', '.toggle-sidebar', function () {
         $(this).toggleClass('fa-chevron-left fa-chevron-right').toggleClass('toggler-position');
         $('.about-sidebar-news').toggleClass('slide-in');
     });
 // animation start
     function animation() {
-        var windowHight = $(window).height();
+        var windowHeight = $(window).height();
         var scroll = $(window).scrollTop();
         $('.animation').each(function () {
             var pozicija = $(this).offset().top;
             var animacija = $(this).attr('data-animation');
             var delay = $(this).attr('data-delay');
-            if (pozicija < scroll + windowHight - 50) {
+            if (pozicija < scroll + windowHeight - 50) {
                 $(this).css('animation-delay', delay);
                 $(this).addClass(animacija);
             }

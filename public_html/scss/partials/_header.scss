@@ -44,12 +44,13 @@ header{
                     
                     &:hover > .navbar-submenu{
                         display: block !important;
-                        background-color: rgba(#fff, 50%);
+                        background-color: $primary;
                     }
                 }
                 .navbar-submenu{
                     list-style: none;
                     display: none;
+                    padding-bottom: 10px;
                     @media(min-width: 992px){
                         position: absolute;
                         padding-right: 10px;
