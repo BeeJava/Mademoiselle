@@ -7,14 +7,18 @@
         font-family: $bodoni;
         font-size: 1.4rem;
         letter-spacing: 1px;
+        display: flex;
+        align-items: center;
         line-height: 1.7rem;
         margin-bottom: 20px;
         a{
             color: #1e1e1e;
             font-weight: bold;
             margin-right: 5px;
+            display: inline-block;
         }
         i{
+            display: inline-block;
             margin-left: 14px;
         }
     }
@@ -59,26 +63,25 @@
                 padding-inline: 0;
             }
         }
-        figure{
-            margin-bottom: 20px;
-        }
-    }
-    .tags{
-        font-family: $bodoni;
-        line-height: 2.7rem;
-        
-        p{
-            font-style: italic;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-        div{
-            display: flex;
-            a{
-                display: inline-block;
-                color: #1e1e1e;
-                margin-inline: 18px;
+        .tags{
+            font-family: $bodoni;
+            line-height: 2.7rem;
+            margin-top: 20px;
+            p{
+                font-style: italic;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            div{
+                display: flex;
+                a{
+                    display: inline-block;
+                    color: #1e1e1e;
+                    margin-inline: 18px;
+                }
             }
         }
+
     }
+
 }

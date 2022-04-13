@@ -64,28 +64,6 @@ $(document).ready(function () {
 
     
 
-    function setHeight() {
-        let elementHeight = Math.max.apply(null, $('.services .services-item-content').map(function () {
-            return $(this).outerHeight();
-        }).get());
-        $('.services-item-content').each(function () {
-            $(this).outerHeight(elementHeight);
-        });
-        
-        
-    }
-
-    if ($(window).width() > 768){
-        setHeight();
-    }
-
-    
-    $(window).resize(function () {
-        if ($(window).width() > 768){
-            setHeight();
-        }
-        
-    });
 
 
 

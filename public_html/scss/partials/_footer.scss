@@ -7,6 +7,9 @@ footer{
             margin-inline: 16px;
             font-size: 2.1rem;
             color: darken($primary, 15%);
+            &:before{
+                background-color: transparent;
+            }
         }
     }
     .copyright{
