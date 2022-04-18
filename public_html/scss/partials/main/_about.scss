@@ -55,13 +55,18 @@
             margin-bottom: 40px;
             input{
                 border: 1px solid #1e1e1e;
-                background-position: 95% center;
-                background-repeat: no-repeat;
-                background-size: 17px auto;
+                border-right: none;
                 padding: 20px;
                 &::placeholder{
                     font-style: italic;
                 }
+            }
+            button{
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 17px auto;
+                border-left: none;
+                padding: 20px;
             }
         }
         .latest-trends-item{

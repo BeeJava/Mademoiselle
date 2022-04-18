@@ -12434,6 +12434,10 @@ header .navbar .navbar-nav .nav-item .navbar-submenu {
   padding-bottom: 10px;
 }
 
+header .navbar .navbar-nav .nav-item .navbar-submenu .nav-item:last-of-type {
+  border-bottom: none;
+}
+
 @media (min-width: 992px) {
   header .navbar .navbar-nav .nav-item .navbar-submenu {
     position: absolute;
@@ -12484,6 +12488,7 @@ header .navbar .navbar-nav .nav-link span {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  opacity: 0.45;
   padding: 218px 0 269px;
   text-align: center;
   margin-bottom: 75px;
@@ -12764,14 +12769,20 @@ header .navbar .navbar-nav .nav-link span {
 
 .about .about-sidebar-news .search-form input {
   border: 1px solid #1e1e1e;
-  background-position: 95% center;
-  background-repeat: no-repeat;
-  background-size: 17px auto;
+  border-right: none;
   padding: 20px;
 }
 
 .about .about-sidebar-news .search-form input::placeholder {
   font-style: italic;
+}
+
+.about .about-sidebar-news .search-form button {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 17px auto;
+  border-left: none;
+  padding: 20px;
 }
 
 .about .about-sidebar-news .latest-trends-item:not(:last-of-type) {
@@ -12996,6 +13007,7 @@ header .navbar .navbar-nav .nav-link span {
 
 .contact .contact-item .contact-form .form-group .form-control {
   border: none;
+  background-color: rgba(225, 225, 225, 0.9);
 }
 
 .contact .contact-item .contact-form .form-group button {

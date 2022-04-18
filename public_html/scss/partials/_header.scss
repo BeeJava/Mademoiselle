@@ -51,6 +51,9 @@ header{
                     list-style: none;
                     display: none;
                     padding-bottom: 10px;
+                    .nav-item:last-of-type{
+                        border-bottom: none;
+                    }
                     @media(min-width: 992px){
                         position: absolute;
                         padding-right: 10px;
